@@ -19,6 +19,6 @@ Encrypted email + text | Mac | GPG Tools | * * * * * | https://gpgtools.org/
 Sending encrypted email | Both | Thunderbird + Enigmail | * * * * * | https://www.mozilla.org/en-US/thunderbird/ + https://www.enigmail.net/download/index.php
 *Protecting files on your computer* | *Both* | *TrueCrypt* | * * | *http://www.truecrypt.org/downloads*
 *More secure file deletion* | *Both* | *CCleaner* | * * | *http://www.piriform.com/ccleaner (Windows) / http://www.piriform.com/mac/ccleaner (Mac)*
-
+*Encrypted group chat, for use in safe environments* | *Both* | *CrytpoCat* | * | *https://crypto.cat/*
 
 *Note: We may not get to the tools listed in italics.*
