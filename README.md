@@ -22,3 +22,22 @@ Sending encrypted email | Both | Thunderbird + Enigmail | * * * * * | https://ww
 *Encrypted group chat, for use in safe environments* | *Both* | *CrytpoCat* | * | *https://crypto.cat/*
 
 *Note: We may not get to the tools listed in italics.*
+
+---
+
+(**Note**: the following installation instructions are a work-in-progress.)
+
+## Tor
+
+* **Website**: https://www.torproject.org/
+* **Download**: We're using "development" versions here due to possible weaknesses in previous versions ([https://goo.gl/3wdfM4](http://arstechnica.com/security/2013/09/majority-of-tor-crypto-keys-could-be-broken-by-nsa-researcher-says/)).
+  * https://www.torproject.org/projects/torbrowser.html.en
+  * Windows [https://goo.gl/taYC27](https://www.torproject.org/dist/torbrowser/tor-browser-2.4.17-beta-1_en-US.exe)
+  * Mac OS X: [https://goo.gl/Dw5uto](https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.4.17-beta-1-osx-i386-en-US.zip)
+
+1. Download the file for the operating system you are using.
+2. Double-click the file to unpack it. On Mac OS X you'll see a `TorBrowser_en-US.app` file appear next to the .zip file you double-clicked. [Windows: TK]
+3. Open the TorBrowser application you just unpacked.
+   * If you are using Mac OS X Mountain Lion, you might get an error that the app “can’t be opened because it is from an unidentified developer. If this happens, right-click on the app (or hold down “Control” on your keyboard and then click on the app) to show a menu on the file. Then hold down the "Option (Alt)" button on your keyboard and click the “Open” option in the menu. You will be asked if you are “sure you want to open [the app].” Once you click “Open,” you won’t need to go through these steps again for this app.
+4. You will see a “Vidalia Control Panel” pop up. You can ignore it as the Tor software starts to connect to the network. This may take a few minutes.
+5. Once Tor is ready, the browser will automatically appear.
