@@ -1,3 +1,4 @@
+![image](http://hackshackers.com/wp-content/uploads/logos/chapters/nyc_side.gif) presents
 # Encryption and Operational Security for Journalists #
 
 Welcome! Please read the following info and download the tools for your operating system ahead of time. It will help make things easier for everybody.
@@ -49,7 +50,7 @@ If possible, please download these files before coming to the event. You don’t
 <br><br>
 * *TrueCrypt*: *http://www.truecrypt.org/downloads* (Click “Download” under Mac OS X.)
 * *CCleaner*: [*CCMacSetup107.dmg*](http://download.piriform.com/mac/CCMacSetup107.dmg)
-* *CryptoCat*: *https://crypto.cat/* (See “downloads” at bottom for options.)
+* *CryptoCat*: *https://crypto.cat/* (Scroll to “Downloads” at bottom for options.)
 
 ### Windows Downloads ###
 
@@ -66,4 +67,4 @@ If possible, please download these files before coming to the event. You don’t
 <br><br>
 * *TrueCrypt*: *http://www.truecrypt.org/downloads* (Click “Download” under Windows 7/Vista/XP/2000.)
 * *CCleaner*: [*ccsetup405.exe*](http://www.piriform.com/ccleaner/download/standard)
-* *CryptoCat*: *https://crypto.cat/* (See “downloads” at bottom for options.)
+* *CryptoCat*: *https://crypto.cat/* (Scroll to “Downloads” at bottom for options.)
