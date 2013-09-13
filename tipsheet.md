@@ -1,7 +1,7 @@
-![image](http://hackshackers.com/wp-content/uploads/logos/chapters/nyc_side.gif) presents
-# Encryption and Operational Security for Journalists
+<b>(Note: the following installation instructions are a work-in-progress until September 16.)</b>
 
-(**Note**: the following installation instructions are a work-in-progress.)
+![image](http://hackshackers.com/wp-content/uploads/logos/chapters/nyc_side.gif)
+# Encryption and Operational Security for Journalists
 
 **Very important caveat**: These tools MAY NOT be 100% effective. The latest information we have is that they are likely to help protect your communications, but governments including the U.S. have made progress in breaking or circumventing some cryptographic technologies.
 
