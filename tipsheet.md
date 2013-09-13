@@ -1,3 +1,4 @@
+![image](http://hackshackers.com/wp-content/uploads/logos/chapters/nyc_side.gif) presents
 # Encryption and Operational Security for Journalists
 
 (**Note**: the following installation instructions are a work-in-progress.)
