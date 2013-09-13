@@ -39,6 +39,8 @@ Sending encrypted email | Both | Thunderbird + Enigmail | * * * * * | [mozilla.o
 
 (Download links as of September 13.)
 
+If possible, please download these files before coming to the event. You don’t need to install anything ahead of time, but having the files saved to your downloads folder will save a lot of time.
+
 * Tor Browser Bundle: [TorBrowser-2.4.17-beta-1-osx-i386-en-US.zip](https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.4.17-beta-1-osx-i386-en-US.zip)
 * Adium: [Adium_1.5.7.dmg](https://sourceforge.net/projects/adium/files/Adium_1.5.7.dmg/download)
 * GPG Tools: [GPG Suite - 2013.08.06.dmg](https://s3.amazonaws.com/gpgtools/GPG%20Suite%20-%202013.08.06.dmg)
@@ -52,6 +54,8 @@ Sending encrypted email | Both | Thunderbird + Enigmail | * * * * * | [mozilla.o
 ### Windows Downloads ###
 
 (Download links as of September 13.)
+
+If possible, please download these files before coming to the event. You don’t need to install anything ahead of time, but having the files saved to your downloads folder will save a lot of time.
 
 * Tor Browser Bundle: [tor-browser-2.4.17-beta-1_en-US.exe](https://www.torproject.org/dist/torbrowser/tor-browser-2.4.17-beta-1_en-US.exe)
 * Pidgin: [pidgin-2.10.7.exe](http://sourceforge.net/projects/pidgin/files/Pidgin/2.10.7/pidgin-2.10.7.exe/download)
