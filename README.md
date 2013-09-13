@@ -22,10 +22,12 @@ Encrypted email + text | Windows | GPG4Win | * * * * * | [gpg4win.org](http://ww
 Encrypted email + text | Mac | GPG Tools | * * * * * | [gpgtools.org][gpgtools]
 Sending encrypted email | Both | Thunderbird + Enigmail | * * * * * | [mozilla.org/thunderbird][thunderbird]<br>&<br>[enigmail.net][enigmail]
 *Protecting files on your computer* | *Both* | *TrueCrypt* | * * * | [*truecrypt.org*][truecrypt]
-*More secure file deletion* | *Both* | *CCleaner* | * * | *[piriform.com/ccleaner](http://www.piriform.com/mac/ccleaner) (Windows)<br>[piriform.com/mac/ccleaner](http://www.piriform.com/mac/ccleaner) (Mac)*
-*Encrypted group chat* | *Both* | *CryptoCat* | * | *[crypto.cat][cryptocat]*
+*More secure file deletion* | *Both* | *CCleaner<sup>1</sup>* | * * | *[piriform.com/ccleaner](http://www.piriform.com/mac/ccleaner) (Windows)<br>[piriform.com/mac/ccleaner](http://www.piriform.com/mac/ccleaner) (Mac)*
+*Encrypted group chat* | *Both* | *CryptoCat<sup>1</sup>* | * | *[crypto.cat][cryptocat]*
 
 *Note: We may not get to the tools listed in italics.*
+
+<sup>1</sup>*In general, open-source software that has been tested for many years is most recommended. For this reason, we suggest more caution with CCleaner, which is closed-source, and CryptoCat, which is new. These issues will be discussed further at the event.*
 
 [tor]: https://www.torproject.org/
 [adium]: https://adium.im/
@@ -34,6 +36,7 @@ Sending encrypted email | Both | Thunderbird + Enigmail | * * * * * | [mozilla.o
 [enigmail]: https://www.enigmail.net/
 [truecrypt]: http://www.truecrypt.org/
 [cryptocat]: https://crypto.cat/
+[bleachbit]: http://bleachbit.sourceforge.net/
 
 
 ### Mac OS X Downloads ###
