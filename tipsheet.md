@@ -31,7 +31,7 @@ Sending encrypted email | Both | Thunderbird + Enigmail | * * * * * | [mozilla.o
 
 ---
 
-## Tor
+## Tor Browser Bundle
 
 * **Website**: https://www.torproject.org/
 * **Download**: We're using "development" versions here due to possible weaknesses in previous versions ([https://goo.gl/3wdfM4](http://arstechnica.com/security/2013/09/majority-of-tor-crypto-keys-could-be-broken-by-nsa-researcher-says/)).
@@ -71,10 +71,15 @@ Sending encrypted email | Both | Thunderbird + Enigmail | * * * * * | [mozilla.o
 
    If everything works as expected, then you’re browsing with Tor!
 
-   [TK: Tor usage caveats]
-
 4. When you are done using Tor, you can close down the browser normally — but make sure you also press "Exit" on the Vidalia window, too.
 
+### Details & Gotchas
+
+Tor works by relaying your traffic through three other computers, each of which can only see the traffic that it recevies and the traffic that it relays back out. (Traffic is encrypted three times: the traffic you send out can only be decrypted by the first machine you send it to. The message it decrypts gives it instructions to send the rest of the data to the second computer. The second computer is the only one that can decrypt the traffic at that point. ...And so on. "Tor" stands for "The Onion Router", due to the layered way that this works.)
+
+Tor only tunnels the raw traffic from your browser — it does not sanitize any of the information you actually send. So, if you are logging into websites under your real identity while using Tor, you are likely still leaking this to the website you are visiting — and you are likely leaking it to the final node in the Tor circuit.
+
+Because Tor relies on volunteers providing computers to act as relays, the anonymity that Tor provides has limitations — if an adversary controls a large portion of Tor nodes, they can analyze and correlate Tor traffic.
 
 ---
 
@@ -108,14 +113,14 @@ Instead of using an existing account, we’ll go about setting up a separate “
 7. Enter `jabber.ccc.de` in the Server field. (Leave Port set to `5222`.) Click "Request New Account."
 8. You'll get a message that your account was successfully registered. (If not, repeat steps 4-7 again, but with a different account name.)
 9. Before leaving this menu, go to the "Privacy" tab and change the Encryption option to "Force encryption and refuse plaintext".
-10. Press OK. Adium should connect your account automatically.
+10. Press OK. Adium should connect your account automatically. You can now close the settings window.
    * If you get a "Verify Certificate" warning, click "Show Certificate", check the "Always trust "jabber.ccc.de" when connecting to "jabber.ccc.de", and then press "Continue".
 
 ### Usage
 
 Adium should automatically connect to `jabber.ccc.de` and log you in when you open it.
 
-**To add someone else to your buddy list:**
+**To add someone to your buddy list:**
 
 1. Go to Contact (at the top of your screen) and hit "Add Contact".
 2. Change Contact Type to "XMPP".
@@ -134,5 +139,48 @@ Adium should prompt you for an OTR Fingerprint Verification. Note the "purported
 
 ### For more security
 
-You can set Adium to tunnel your `jabber.ccc.de` connection over Tor.
+You can set Adium to tunnel your `jabber.ccc.de` connection over Tor. This routes your connection over Tor so that the Chaos Computer Club servers cannot identify you by IP address.
+
+1. In the top-left of your screen, open the "Adium" menu and go to "Preferences."
+2. In the "Accounts" tab, click on your `jabber.ccc.de` account and then press "Edit".
+3. Under the "Proxy" tab, check the "Connect using proxy" box and use the following settings. Leave "Username" and "Password" blank.
+   * Type: "SOCKS5"
+   * Server: 127.0.0.1
+   * Port: 9150
+4. Under the "Options" tab, set the Connect Server to `okj7xc6j2szr2y75.onion`.
+5. Press "OK".
+6. Launch Tor Browser Bundle (as above). Wait for the browser to finish connecting and for the Tor browser to show up.
+7. Uncheck the checkbox for your `jabber.ccc.de` account and then re-check it.
+
+From now on, you will need to launch Tor Browser Bundle and wait for it to connect before launching Adium. Connecting to `jabber.ccc.de` will be very slow when you first open Adium, but your chat connections will be tunneled such that your IP address cannot be inferred by the chat server.
+
+---
+
+## Pidgin (Windows)
+
+* **Website**: https://pidgin.im/
+* **Download**: [pidgin-2.10.7.exe][pidgin_dl] ([http://goo.gl/lcBqn4][pidgin_dl])
+
+[pidgin_dl]: http://sourceforge.net/projects/pidgin/files/Pidgin/2.10.7/pidgin-2.10.7.exe/download
+
+### Installation
+
+
+### First-time usage
+
+Pidgin supports using chat accounts of all types, including AOL Instant Messenger, Facebook Chat, and Google Talk. You can use these accounts with Pidgin and use OTR encryption just fine. But this still gives metadata to the service: AIM/Facebook/Google still knows who you are talking to and how often. (They just don’t have the content of your messages now.)
+
+Instead of using an existing account, we’ll go about setting up a separate “secure” account at `jabber.ccc.de`. This is a chat service provided by the Chaos Computer Club — a German hacker/activism group known for open data and privacy advocacy — and is used by many in the security community.
+
+### Usage
+
+Pidgin should automatically connect to `jabber.ccc.de` and log you in when you open it.
+
+**To add someone to your buddy list:**
+
+**When instant messaging somebody:**
+
+### For more security
+
+You can set Pidgin to tunnel your `jabber.ccc.de` connection over Tor.
 
