@@ -64,7 +64,7 @@ If possible, please download these files before coming to the event. You don’t
 
 If possible, please download these files before coming to the event. You don’t need to install anything ahead of time, but having the files saved to your downloads folder will save a lot of time.
 
-* Bundle containing Tor Browser Bundle, Pidgin, OTR for Pidgin, GPG4Win, Thunderbird, EnigmailTrueCrypt, and CCleaner --  so you don't need to download each of the following individually:
+* Bundle containing Tor Browser Bundle, Pidgin, OTR for Pidgin, GPG4Win, Thunderbird, Enigmail, TrueCrypt, and CCleaner --  so you don't need to download each of the following individually:
 <br>[hhba-crypto-windows-v2.zip](https://d2p12wh0p3fo1n.cloudfront.net/files/20130916/hhba-crypto-windows-v2.zip) ([https://goo.gl/Lj0a5O](https://d2p12wh0p3fo1n.cloudfront.net/files/20130916/hhba-crypto-windows-v2.zip))
 <br><br>
 * Tor Browser Bundle: [tor-browser-2.4.17-beta-1_en-US.exe](https://www.torproject.org/dist/torbrowser/tor-browser-2.4.17-beta-1_en-US.exe)
