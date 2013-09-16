@@ -1,4 +1,4 @@
-<b>(Note: the following installation instructions are a work-in-progress until September 16.)</b>
+<b>(Note: the following installation instructions are a work-in-progress.)</b>
 
 ![image](http://hackshackers.com/wp-content/uploads/logos/chapters/nyc_side.gif)
 # Encryption and Operational Security for Journalists
