@@ -77,3 +77,10 @@ If possible, please download these files before coming to the event. You don’t
 * *TrueCrypt*: *http://www.truecrypt.org/downloads* (Click “Download” under Windows 7/Vista/XP/2000.)
 * *CCleaner*: [*ccsetup405.exe*](http://www.piriform.com/ccleaner/download/standard)
 * *CryptoCat*: *https://crypto.cat/* (Scroll to “Downloads” at bottom for options.)
+
+### Linux ###
+
+* Tor Browser Bundle: [32-bit](https://www.torproject.org/dist/torbrowser/linux/tor-browser-gnu-linux-i686-2.4.17-beta-1-dev-en-US.tar.gz) [64-bit](https://www.torproject.org/dist/torbrowser/linux/tor-browser-gnu-linux-x86_64-2.4.17-beta-1-dev-en-US.tar.gz)
+* Install GnuPG for your system. (`sudo apt-get install gnupg` or `yum install gnupg` or `pacman install gnupg` something similar)
+* Thunderbird
+* Enigmail: [enigmail-1.5.2-tb+sm.xpi](https://addons.mozilla.org/en-US/thunderbird/downloads/file/219050/enigmail-1.5.2-tb+sm.xpi)
