@@ -45,6 +45,8 @@ Sending encrypted email | Both | Thunderbird + Enigmail | * * * * * | [mozilla.o
 
 If possible, please download these files before coming to the event. You don’t need to install anything ahead of time, but having the files saved to your downloads folder will save a lot of time.
 
+* Bundle containing Tor Browser Bundle, Adium, GPG Tools, Thunderbird, and Enigmail: (If you don't want to download each of the following individually.)<br>[hhba-crypto-mac.zip](https://d2p12wh0p3fo1n.cloudfront.net/files/20130916/hhba-crypto-mac.zip) ([https://goo.gl/iauwAk](https://d2p12wh0p3fo1n.cloudfront.net/files/20130916/hhba-crypto-mac.zip))
+<br><br>
 * Tor Browser Bundle: [TorBrowser-2.4.17-beta-1-osx-i386-en-US.zip](https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.4.17-beta-1-osx-i386-en-US.zip)
 * Adium: [Adium_1.5.7.dmg](https://sourceforge.net/projects/adium/files/Adium_1.5.7.dmg/download)
 * GPG Tools: [GPG Suite - 2013.08.06.dmg](https://s3.amazonaws.com/gpgtools/GPG%20Suite%20-%202013.08.06.dmg)
@@ -61,6 +63,9 @@ If possible, please download these files before coming to the event. You don’t
 
 If possible, please download these files before coming to the event. You don’t need to install anything ahead of time, but having the files saved to your downloads folder will save a lot of time.
 
+* Bundle containing Tor Browser Bundle, Pidgin, OTR for Pidgin, GPG4Win, Thunderbird, and Enigmail: (If you don't want to download each of the following individually.)
+<br>[hhba-crypto-windows.zip](https://d2p12wh0p3fo1n.cloudfront.net/files/20130916/hhba-crypto-windows.zip) ([https://goo.gl/Zl9iyH](https://d2p12wh0p3fo1n.cloudfront.net/files/20130916/hhba-crypto-windows.zip))
+<br><br>
 * Tor Browser Bundle: [tor-browser-2.4.17-beta-1_en-US.exe](https://www.torproject.org/dist/torbrowser/tor-browser-2.4.17-beta-1_en-US.exe)
 * Pidgin: [pidgin-2.10.7.exe](http://sourceforge.net/projects/pidgin/files/Pidgin/2.10.7/pidgin-2.10.7.exe/download)
 * OTR for Pidgin: [pidgin-otr-4.0.0-1.exe](http://www.cypherpunks.ca/otr/binaries/windows/pidgin-otr-4.0.0-1.exe)
