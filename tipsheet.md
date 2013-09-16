@@ -158,13 +158,15 @@ From now on, you will need to launch Tor Browser Bundle and wait for it to conne
 
 ## Pidgin (Windows)
 
-* **Website**: https://pidgin.im/
-* **Download**: [pidgin-2.10.7.exe][pidgin_dl] ([http://goo.gl/lcBqn4][pidgin_dl])
+* **Website**: https://pidgin.im/ & http://www.cypherpunks.ca/otr/
+* **Download**: [pidgin-2.10.7.exe][pidgin_dl] ([https://goo.gl/lcBqn4][pidgin_dl]) & [pidgin-otr-4.0.0-1.exe][otr_dl] ([https://goo.gl/FiqBJi][otr_dl])
 
 [pidgin_dl]: http://sourceforge.net/projects/pidgin/files/Pidgin/2.10.7/pidgin-2.10.7.exe/download
+[otr_dl]: http://www.cypherpunks.ca/otr/binaries/windows/pidgin-otr-4.0.0-1.exe
 
 ### Installation
 
+TODO
 
 ### First-time usage
 
@@ -178,9 +180,24 @@ Pidgin should automatically connect to `jabber.ccc.de` and log you in when you o
 
 **To add someone to your buddy list:**
 
+TODO
+
+
 **When instant messaging somebody:**
+
+TODO
 
 ### For more security
 
 You can set Pidgin to tunnel your `jabber.ccc.de` connection over Tor.
 
+TODO
+
+---
+
+## Thunderbird + Enigmail
+
+* **Website**:
+* **Download**:
+
+You will need to install GPG4Win (Windows) or GPGTools (Mac OS X) first.
