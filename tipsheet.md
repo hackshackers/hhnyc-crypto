@@ -200,4 +200,97 @@ TODO
 * **Website**:
 * **Download**:
 
-You will need to install GPG4Win (Windows) or GPGTools (Mac OS X) first.
+TODO / DRAFT. Below instructions are early draft-quality at this point.
+
+### Installation
+
+#### 1: Install GPG4Win (Windows) or GPGTools (Mac OS X)
+* GPG4Win: Download the full GPG4Win package and then install it as you would a normal program.
+* GPGTools: Download the GPGTools/GPGSuite package and open it. Double-click the "pkg" file inside it to install the toolkit.
+
+#### 2: Install Thunderbird
+
+#### 3: Set up your e-mail account
+
+Open up Thunderbird and set up your Gmail account (or whichever e-mail account you want to use). Thunderbird should prompt you and walk you through it when it starts up (if you haven't already set up an account). If you have issues, see <a href="https://support.mozillamessaging.com/en-US/kb/thunderbird-and-gmail">their documentation</a>.
+
+#### 4: Install Enigmail into Thunderbird
+
+* In the top menu, go to Tools->Add Ons.
+* Click on the "Extensions" tab.
+* At the top of that window, there will be a "gear" icon to the left of the search box. Click it and choose "Install Add-on From File..." 
+* Go to the "enigmail-1.5.2-tb+sm.xpi" file you downloaded and choose that to install it.
+* The add-on screen will say that Thunderbird should restart before it’s active, so let it do that.
+
+Now that Thunderbird’s open again, if you’re still in the "Add-ons Manager" tab, close that to go back to your inbox.
+
+#### 5: Generate a GPG key
+
+In the top menu, you'll now see "OpenPGP". Click that and go to "Key Management".
+
+This Key Management screen should be empty unless you already generated a GPG key in another program. To generate a key:
+
+* While in "Key Management" screen, click on "Generate" in the top menu and then "New Key Pair".
+* Choose the e-mail address you set up and make sure "Use generated key for the selected identity" is checked.
+* Type in a password to protect this key. Leave "Comment" blank. (This is a note that shows up next to your name. If you make multiple keys or if you have an alias or nickname that everyone uses, you can put that info here.)
+* Under "Advanced" tab, change "Key size" to 4096.
+* Generate the key.
+* When it asks you if you want to make a Revocation Certificate, just skip that step for now.
+
+In "Key Management", you'll see a listing for your name & email address. It should be in bold, which means that it’s a key containing the "private" portion of the key.
+
+#### 6: Upload the GPG key somewhere
+
+(NOTE: Skip this step if your e-mail address is sensitive & should not be published in any public directories.)
+
+The "public" part of the GPG key is the part that other people need so that they can send you encrypted mails. You can either upload this to your website or to a "key server" (which is basically an e-mail directory that shows if there are GPG keys available for a given e-mail address). These instructions are for uploading to a key server, since that's usually the easiest way to go.
+
+In the "Key Management" window, right-click on the entry for your name/e-mail. Click "Upload keys to keyserver". Type "pgp.mit.edu" in as the keyserver and press OK to upload. (There shouldn't be any confirmation prompt. An "uploading" screen should appear and then it should just go away.)
+
+You can test if it worked by going to http://pgp.mit.edu/ and searching for your name or e-mail address.
+
+#### 7: How to send an encrypted e-mail to someone.
+
+If you're e-mailing someone who already has a PGP key -- basically, anybody who has done the above steps -- you can start sending them encrypted messages and they can start sending you encrypted messages.
+
+In the "Key Management" window, click on "Keyserver" at the top menu and click "Search for Keys".
+
+* You can look for someone's e-mail address in here. Test it out on mine: `mike AT tig DOT as` (change words to punctuation to make it a real e-mail address)
+* Sometimes someone has multiple keys (since old ones sometimes expire or are lost). Mine is 6E0E9923.
+* This ID is very important to verify with people, since nothing stops a person from generating a fake "Mike Tigas <...>" key and uploading it to a server. (They won't be able to send e-mail from my Gmail account, but they can make it confusing & hard for people to find my correct key.) This is why my business cards & website & Twitter bio all mention my key ID.
+* Click the checkbox" next to my 6E0E9923 entry and press OK to download it from the keyserver.
+* Some output will appear. Click OK.
+* Now, there will be an entry for me in your Key Management window. It will not be bold, because you only have the "public" portion of the key.
+
+Now that you have the public key for me, you can test sending an encrypted message.Close the Key Management window and write a message in Thunderbird.
+
+* Address it to me: `mike AT tig DOT as` (of course, turn this into a real e-mail address)
+* Write whatever message you'd like.
+* Click on "OpenPGP" in the message window and you'll get some options. You'll want to sign and encrypt the message. (PGP/MIME is useful if you are sending attachments, but it only works with people who have Enigmail, and not with people who use PGP in other ways. So I try to avoid it.)
+* In the bottom-right corner, you'll see a pencil and a key icon -- which represent signing & encrypting. You can use these  instead of opening the OpenPGP menu, too. (Make sure to look at these before sending any message — I've heard that Enigmail sometimes turns off encryption randomly, so it's good habit to make sure to explicitly check this every time you need to send a message.)
+* Send the message. Thunderbird will ask you for the password you used when you set up the GPG key (back in step 5).
+
+#### 8: Receiving encrypted mail from others
+
+The other person will have to basically do the things in step 7, but with your e-mail address instead.
+
+When you receive a message, Thunderbird will ask you for the password you used for the GPG key, so that it can unlock it and decrypt that message.
+
+#### 9: Sharing the key with other people
+
+Since you uploaded your key in step 6, you'll need to tell people where to find it and make sure you publish this information in several places so that there's some level of verification. A good way to do this is:
+
+* search for your name at pgp.mit.edu
+* find the entry for you and click the link where the ID is (not the "Name <email>" part).
+* link to this page on your blog or e-mail people a link to this page.
+
+This isn't the only way to do this.
+
+If you skipped step 6, you'll want to directly share your key and sidestep the whole directory system. You can use the Key Management window and press "Export Keys to File" or "Send Public Keys by Email". Make sure you export the Public Key only. Sharing this file or sending this message will let the recipient add the key to their own computer. (From the Key Management window: File->Import Keys from File, or if received from an e-mail and copied it: Edit->Import Keys from Clipboard.)
+
+When exporting your Public Key to a file, you can upload this file to your blog or somewhere and link to it from a place where folks would be able to find.
+
+Now you basically have a system where people who know about PGP can e-mail you securely:
+
+1. They can find you in a keyserver and use that key to e-mail you
+2. They can find your key on your website (or if you have e-mailed them that link directly) and have seen that your key ID matches in several places.
